@@ -221,6 +221,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .hero .hero__title {
+    font-size: 50px;
+  }
+}
+
 .hero .hero__description {
   font-size: 24px;
   padding: 0 525px;
@@ -231,6 +237,13 @@
   .hero .hero__description {
     font-size: 20px;
     padding: 0 410px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero .hero__description {
+    font-size: 17px;
+    padding: 0 360px;
   }
 }
 
@@ -263,6 +276,12 @@
 @media (max-width: 1200px) {
   .video-left .video-left__title {
     font-size: 26px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .video-left .video-left__title {
+    font-size: 22px;
   }
 }
 
@@ -328,6 +347,12 @@
   padding-top: 50px;
   font-size: 36px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+  .features .features__title {
+    font-size: 30px;
+  }
 }
 
 .feature {
@@ -458,9 +483,27 @@
   padding-top: 50px;
 }
 
+@media (max-width: 1024px) {
+  .download .download__image {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .download .image-cloud {
+    padding-top: 55px;
+  }
+}
+
 .download .download__title {
   padding-top: 20px;
   font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .download .download__title {
+    padding-top: 40px;
+  }
 }
 
 .download .download__description {
@@ -473,6 +516,12 @@
   .download .download__description {
     font-size: 9px;
     padding-top: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .download .download__description {
+    padding: 10px 20px;
   }
 }
 
@@ -789,5 +838,11 @@
 .copyright {
   margin-left: 175px;
   margin-top: 130px;
+}
+
+@media (max-width: 1024px) {
+  .copyright {
+    margin-left: 145px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

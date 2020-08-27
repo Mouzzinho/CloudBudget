@@ -8,6 +8,10 @@
         padding-top: 50px;
         font-size: 36px;
         padding-bottom: 60px;
+
+        @media(max-width: 1024px) {
+            font-size: 30px;
+        }
     }
 }
 

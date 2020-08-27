@@ -92,4 +92,8 @@
 .copyright {
     margin-left: 175px;
     margin-top: 130px;
+
+    @media(max-width: 1024px) {
+        margin-left: 145px;
+    }
 }

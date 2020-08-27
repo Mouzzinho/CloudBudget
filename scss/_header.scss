@@ -47,6 +47,7 @@
 
 
 
+
     .menu {
         width: 100%;
         display: flex;
@@ -160,6 +161,10 @@
         @media(max-width: 1200px) {
             font-size: 60px;
         }
+
+        @media(max-width: 1200px) {
+            font-size: 50px;
+        }
     }
 
     .hero__description {
@@ -170,6 +175,11 @@
         @media(max-width: 1200px) {
             font-size: 20px;
             padding: 0 410px;
+        }
+
+        @media(max-width: 1024px) {
+            font-size: 17px;
+            padding: 0 360px;
         }
     }
 
