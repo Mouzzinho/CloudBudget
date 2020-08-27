@@ -328,4 +328,69 @@
   font-size: 12px;
   padding: 0 50px;
 }
+
+.app-download {
+  background: #ED4C5C;
+  padding: 100px 0;
+  color: white;
+}
+
+.left-side {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 150px;
+}
+
+.left-side .left-side__title {
+  font-size: 36px;
+}
+
+.left-side .left-side__description {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.apps__google {
+  padding-right: 20px;
+}
+
+.apps__apple {
+  padding-right: 25px;
+}
+
+.right-side {
+  width: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-side .right-side__over {
+  position: absolute;
+  border-radius: 20px;
+}
+
+.right-side .right-side__under {
+  border-radius: 20px;
+}
 /*# sourceMappingURL=style.css.map */
