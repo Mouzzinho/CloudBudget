@@ -1,0 +1,42 @@
+.technology {
+    padding: 100px 0;
+
+    .technology__title {
+        text-align: center;
+        padding: 10px 0 60px 0;
+        font-size: 30px;
+    }
+}
+
+.download {
+    width: 25%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .download__number {
+        font-size: 100px;
+        opacity: 0.1;
+    }
+
+    .download__image {
+        position: absolute;
+        padding-top: 60px;
+    }
+
+    .download__title {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .download__description {
+        padding-top: 30px;
+        font-size: 12px;
+        padding: 0 50px;
+    }
+}
