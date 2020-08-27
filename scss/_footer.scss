@@ -40,6 +40,10 @@
     @media(max-width: 480px) and (orientation: portrait) {
         font-size: 10px;
     }
+
+    @media(max-width: 360px) and (orientation: portrait) {
+        font-size: 8px;
+    }
 }
 
 .layout {
@@ -131,6 +135,10 @@
 
         @media(max-width: 480px) and (orientation: portrait) {
             margin-left: 20px;
+        }
+
+        @media(max-width: 360px) and (orientation: portrait) {
+            margin-left: 0;
         }
 
 

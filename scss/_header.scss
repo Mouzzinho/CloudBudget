@@ -77,6 +77,8 @@
         }
 
 
+
+
         .logo {
             display: flex;
             flex-direction: row;
@@ -97,11 +99,19 @@
                 font-size: 7px;
             }
 
+            @media(max-width: 360px) and (orientation: portrait) {
+                font-size: 6px;
+            }
+
             .logo__img {
                 padding-right: 5px;
 
                 @media(max-width: 480px) and (orientation: portrait) {
                     width: 20px;
+                }
+
+                @media(max-width: 360px) and (orientation: portrait) {
+                    width: 15px;
                 }
             }
         }
@@ -124,6 +134,10 @@
         margin-right: 10px;
     }
 
+    @media(max-width: 360px) and (orientation: portrait) {
+        font-size: 6px;
+    }
+
     .list__item {
         padding: 0 20px;
 
@@ -139,6 +153,12 @@
             margin-left: 5px;
             font-size: 7px;
         }
+
+        @media(max-width: 360px) and (orientation: portrait) {
+            font-size: 6px;
+            padding: 0;
+        }
+
     }
 
 
@@ -169,6 +189,10 @@
         @media(max-width: 480px) and (orientation: portrait) {
             font-size: 7px;
         }
+
+        @media(max-width: 360px) and (orientation: portrait) {
+            font-size: 6px;
+        }
     }
 
     .language__img {
@@ -181,11 +205,19 @@
         @media(max-width: 480px) and (orientation: portrait) {
             width: 20px;
         }
+
+        @media(max-width: 360px) and (orientation: portrait) {
+            width: 15px;
+        }
     }
 
     .language__arrow {
         @media(max-width: 1200px) {
             width: 20px;
+        }
+
+        @media(max-width: 360px) and (orientation: portrait) {
+            width: 15px;
         }
     }
 }
@@ -213,6 +245,11 @@
         width: 50px;
         height: 20px;
     }
+
+    @media(max-width: 360px) and (orientation: portrait) {
+        width: 40px;
+        margin-right: 5px;
+    }
 }
 
 .hero {
@@ -229,6 +266,10 @@
 
     @media(max-width: 480px) and (orientation: portrait) {
         margin-top: 250px;
+    }
+
+    @media(max-width: 360px) and (orientation: portrait) {
+        margin-top: 200px;
     }
 
     .hero__title {
@@ -251,6 +292,7 @@
         @media(max-width: 480px) and (orientation: portrait) {
             font-size: 30px;
         }
+
     }
 
     .hero__description {
@@ -284,6 +326,10 @@
         @media(max-width: 480px) and (orientation: portrait) {
             font-size: 16px;
             padding: 0 90px 20px 90px;
+        }
+
+        @media(max-width: 360px) and (orientation: portrait) {
+            padding: 0 30px 30px 30px;
         }
     }
 
