@@ -22,12 +22,18 @@
     .download__number {
         font-size: 100px;
         opacity: 0.1;
+
+        @media(max-width: 1200px) {
+            font-size: 80px;
+
+        }
     }
 
     .download__image {
         position: absolute;
-        padding-top: 60px;
+        padding-top: 50px;
     }
+
 
     .download__title {
         padding-top: 20px;
@@ -38,5 +44,10 @@
         padding-top: 30px;
         font-size: 12px;
         padding: 0 50px;
+
+        @media(max-width: 1200px) {
+            font-size: 9px;
+            padding-top: 10px;
+        }
     }
 }

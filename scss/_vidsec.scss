@@ -14,13 +14,24 @@
 
     .video-left__title {
         font-size: 36px;
+
+        @media(max-width: 1200px) {
+            font-size: 26px;
+        }
     }
 
     .video-left__description {
         font-size: 14px;
         padding-right: 130px;
         text-align: justify;
-        // margin-top: 30px;
+
+        @media(max-width: 1200px) {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-right: 0;
+            font-size: 11px;
+        }
     }
 
     .video-left__learnmore {
@@ -34,8 +45,15 @@
     padding-left: 70px;
     position: relative;
 
+
+
     .video-right__video {
         border-radius: 15px;
+
+        @media(max-width: 1200px) {
+            max-width: 100%;
+
+        }
     }
 
     .viedo-right__playbutton {
@@ -44,5 +62,9 @@
         top: 0;
         padding-left: 40px;
         padding-top: 120px;
+
+        @media(max-width: 1200px) {
+            padding-top: 80px;
+        }
     }
 }

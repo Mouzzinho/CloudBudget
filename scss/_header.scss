@@ -12,6 +12,11 @@
     height: 50px;
     border-radius: 6px;
     border-color: transparent;
+
+    @media(max-width: 1200px) {
+        width: 140px;
+        height: 40px;
+    }
 }
 
 
@@ -34,6 +39,11 @@
     flex-direction: row;
     margin: auto;
 
+    @media(max-width: 1200px) {
+        width: 768px;
+        padding: 0 15px;
+    }
+
 
 
 
@@ -47,12 +57,20 @@
         max-width: 1170px;
         padding-top: 25px;
 
+        @media(max-width: 1200px) {
+            max-width: 768px;
+        }
+
 
         .logo {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+
+            @media(max-width: 1200px) {
+                font-size: 12px;
+            }
 
             .logo__img {
                 padding-right: 5px;
@@ -68,8 +86,16 @@
     justify-content: space-between;
     font-size: 15px;
 
+    @media(max-width: 1200px) {
+        font-size: 12px;
+    }
+
     .list__item {
         padding: 0 20px;
+
+        @media(max-width: 1200px) {
+            padding: 0 10px;
+        }
     }
 
 
@@ -82,8 +108,25 @@
     align-items: center;
     padding-right: 10px;
 
+    .language__text {
+        @media(max-width: 1200px) {
+            font-size: 12px;
+            justify-content: space-evenly;
+        }
+    }
+
     .language__img {
         padding-right: 5px;
+
+        @media(max-width: 1200px) {
+            width: 30px;
+        }
+    }
+
+    .language__arrow {
+        @media(max-width: 1200px) {
+            width: 20px;
+        }
     }
 }
 
@@ -94,6 +137,12 @@
     border-radius: 6px;
     color: white;
     border: 1px solid white;
+
+    @media(max-width: 1200px) {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
 }
 
 .hero {
@@ -107,12 +156,21 @@
     .hero__title {
         font-size: 72px;
         letter-spacing: 5px;
+
+        @media(max-width: 1200px) {
+            font-size: 60px;
+        }
     }
 
     .hero__description {
         font-size: 24px;
         padding: 0 525px;
         text-align: center;
+
+        @media(max-width: 1200px) {
+            font-size: 20px;
+            padding: 0 410px;
+        }
     }
 
 

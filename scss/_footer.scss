@@ -6,12 +6,22 @@
 .title--size {
     font-size: 18px;
     padding-bottom: 30px;
+
+    @media(max-width: 1200px) {
+        font-size: 16px;
+
+    }
 }
 
 .text--size {
     font-size: 12px;
     line-height: 150%;
     text-align: left;
+
+    @media(max-width: 1200px) {
+        font-size: 10px;
+
+    }
 }
 
 .layout {
@@ -24,6 +34,11 @@
         width: 25%;
         padding-right: 120px;
 
+        @media(max-width: 1200px) {
+            padding-right: 35px;
+
+        }
+
         .address--span {
             display: block;
         }
@@ -31,6 +46,11 @@
 
     .services {
         width: 25%;
+
+        @media(max-width: 1200px) {
+            margin-left: 10px;
+
+        }
 
         .servies-list {
             display: flex;

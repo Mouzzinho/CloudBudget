@@ -1,5 +1,4 @@
 .contact {
-    // background-color: green;
     padding: 100px 0 120px 0;
 }
 
@@ -15,6 +14,11 @@
         font-size: 14px;
         padding-right: 150px;
         line-height: 140%;
+
+        @media(max-width: 1200px) {
+            padding-right: 0px;
+            font-size: 10px;
+        }
     }
 }
 
@@ -26,6 +30,11 @@
     justify-content: flex-start;
     align-content: flex-start;
 
+    @media(max-width: 1200px) {
+        margin-left: 80px;
+    }
+
+
 
     .input--small {
         width: 255px;
@@ -35,6 +44,11 @@
         border: 1px solid grey;
         margin-bottom: 20px;
         padding-left: 30px;
+
+        @media(max-width: 1200px) {
+            width: 165px;
+            height: 40px;
+        }
     }
 
     .inputs__first-name {
@@ -50,6 +64,11 @@
         border: 1px solid grey;
         margin-bottom: 20px;
         padding-left: 30px;
+
+        @media(max-width: 1200px) {
+            width: 360px;
+            height: 40px;
+        }
 
     }
 
