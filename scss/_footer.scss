@@ -1,0 +1,75 @@
+.footer {
+    background: #FAFAFA;
+    padding: 100px 0 90px 0;
+}
+
+.title--size {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.text--size {
+    font-size: 12px;
+    line-height: 150%;
+    text-align: left;
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .address {
+        width: 25%;
+        padding-right: 120px;
+
+        .address--span {
+            display: block;
+        }
+    }
+
+    .services {
+        width: 25%;
+
+        .servies-list {
+            display: flex;
+            flex-direction: column;
+
+            .services-list__item {
+                line-height: 160%;
+            }
+
+        }
+
+    }
+
+    .get-in-touch {
+        width: 25%;
+
+        .get-in-touch__mail {
+            padding-bottom: 10px;
+        }
+
+        .socials {
+            padding-top: 20px;
+
+            .socials__facebook {
+                padding-right: 10px;
+            }
+
+            .socials__linked-in {
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .secure {
+        width: 25%;
+    }
+}
+
+.copyright {
+    margin-left: 175px;
+    margin-top: 130px;
+}
