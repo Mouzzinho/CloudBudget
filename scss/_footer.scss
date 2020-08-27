@@ -17,6 +17,10 @@
     @media(max-width: 768px) and (orientation: portrait) {
         font-size: 18px;
     }
+
+    @media(max-width: 480px) and (orientation: portrait) {
+        font-size: 16px;
+    }
 }
 
 .text--size {
@@ -31,6 +35,10 @@
 
     @media(max-width: 768px) and (orientation: portrait) {
         font-size: 12px;
+    }
+
+    @media(max-width: 480px) and (orientation: portrait) {
+        font-size: 10px;
     }
 }
 
@@ -51,6 +59,10 @@
 
         @media(max-width: 768px) and (orientation: portrait) {
             margin-left: 40px;
+        }
+
+        @media(max-width: 480px) and (orientation: portrait) {
+            padding-right: 0px;
         }
 
         .address--span {
@@ -111,22 +123,28 @@
 
         @media(max-width: 768px) and (orientation: portrait) {
             margin-right: 30px;
-
-
-
-        }
-
-        @media(max-width: 768px) and (orientation: portrait) {
             max-width: 25%;
+
+
+
         }
+
+        @media(max-width: 480px) and (orientation: portrait) {
+            margin-left: 20px;
+        }
+
 
         .secure__image {
             @media(max-width: 768px) and (orientation: portrait) {
                 width: 50%;
 
-
-
             }
+
+            @media(max-width: 480px) and (orientation: portrait) {
+                width: 100%;
+            }
+
+
 
         }
     }

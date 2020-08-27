@@ -51,6 +51,10 @@
         flex-direction: row;
     }
 
+    @media(max-width: 480px) and (orientation: portrait) {
+        justify-content: center;
+    }
+
 
 
 
@@ -71,11 +75,20 @@
         @media(max-width: 768px) and (orientation: portrait) {
             width: 130px;
         }
+
+        @media(max-width: 480px) and (orientation: portrait) {
+            width: 220px;
+        }
     }
 
     .inputs__first-name {
         margin-right: 30px;
+
+        @media(max-width: 480px) and (orientation: portrait) {
+            margin-right: 0;
+        }
     }
+
 
 
 
@@ -93,7 +106,7 @@
         }
 
         @media(max-width: 768px) and (orientation: portrait) {
-            width: 290px;
+            width: 220px;
         }
 
     }

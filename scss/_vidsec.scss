@@ -49,6 +49,10 @@
         @media(max-width: 768px) and (orientation: portrait) {
             font-size: 14px;
         }
+
+        @media(max-width: 480px) and (orientation: portrait) {
+            font-size: 16px;
+        }
     }
 
     .video-left__learnmore {
@@ -97,6 +101,11 @@
             padding-top: 100px;
 
 
+        }
+
+        @media(max-width: 480px) and (orientation: portrait) {
+            padding-left: 90px;
+            padding-top: 50px;
         }
     }
 }
