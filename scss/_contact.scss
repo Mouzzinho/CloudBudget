@@ -5,6 +5,14 @@
 .left-text {
     width: 50%;
 
+    @media(max-width: 768px) and (orientation: portrait) {
+        max-width: 50%;
+    }
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        margin-left: 40px;
+    }
+
     .left-text__title {
         font-size: 36px;
         padding-bottom: 50px;
@@ -18,6 +26,10 @@
         @media(max-width: 1200px) {
             padding-right: 0px;
             font-size: 10px;
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            font-size: 14px;
         }
     }
 }
@@ -34,6 +46,12 @@
         margin-left: 80px;
     }
 
+    @media(max-width: 768px) and (orientation: portrait) {
+        max-width: 50%;
+        flex-direction: row;
+    }
+
+
 
 
     .input--small {
@@ -48,6 +66,10 @@
         @media(max-width: 1200px) {
             width: 165px;
             height: 40px;
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            width: 130px;
         }
     }
 
@@ -68,6 +90,10 @@
         @media(max-width: 1200px) {
             width: 360px;
             height: 40px;
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            width: 290px;
         }
 
     }

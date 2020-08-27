@@ -4,6 +4,15 @@
     padding-bottom: 30px;
 }
 
+.container-mobile {
+    @media(max-width: 768px) and (orientation: portrait) {
+        display: flex;
+        flex-direction: column-reverse;
+
+
+    }
+}
+
 .video-left {
     display: flex;
     flex-direction: column;
@@ -36,6 +45,10 @@
             padding-right: 0;
             font-size: 11px;
         }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            font-size: 14px;
+        }
     }
 
     .video-left__learnmore {
@@ -49,6 +62,13 @@
     padding-left: 70px;
     position: relative;
 
+    @media(max-width: 768px) and (orientation: portrait) {
+        padding-left: 0;
+        padding-bottom: 30px;
+
+
+    }
+
 
 
     .video-right__video {
@@ -58,6 +78,7 @@
             max-width: 100%;
 
         }
+
     }
 
     .viedo-right__playbutton {
@@ -69,6 +90,13 @@
 
         @media(max-width: 1200px) {
             padding-top: 80px;
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            padding-left: 160px;
+            padding-top: 100px;
+
+
         }
     }
 }

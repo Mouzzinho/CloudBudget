@@ -25,9 +25,12 @@
     color: white;
     background-color: green;
     background: url("../images/Bg (1).jpg");
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 100%;
+    overflow: auto;
 
 
     z-index: 10;
@@ -42,6 +45,11 @@
     @media(max-width: 1200px) {
         width: 768px;
         padding: 0 15px;
+    }
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        width: 100%;
+        padding: 0;
     }
 
 
@@ -62,6 +70,10 @@
             max-width: 768px;
         }
 
+        @media(max-width: 768px) and (orientation: portrait) {
+            max-width: 100%;
+        }
+
 
         .logo {
             display: flex;
@@ -71,6 +83,11 @@
 
             @media(max-width: 1200px) {
                 font-size: 12px;
+            }
+
+            @media(max-width: 768px) and (orientation: portrait) {
+                font-size: 10px;
+                margin-left: 10px;
             }
 
             .logo__img {
@@ -91,11 +108,20 @@
         font-size: 12px;
     }
 
+    @media(max-width: 768px) and (orientation: portrait) {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
     .list__item {
         padding: 0 20px;
 
         @media(max-width: 1200px) {
             padding: 0 10px;
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            padding: 0 5px;
         }
     }
 
@@ -109,10 +135,19 @@
     align-items: center;
     padding-right: 10px;
 
+    @media(max-width: 768px) and (orientation: portrait) {
+        padding-right: 0;
+        margin-right: 10px;
+    }
+
     .language__text {
         @media(max-width: 1200px) {
             font-size: 12px;
             justify-content: space-evenly;
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            font-size: 10px;
         }
     }
 
@@ -144,6 +179,11 @@
         height: 30px;
         font-size: 10px;
     }
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        width: 80px;
+        margin-right: 20px;
+    }
 }
 
 .hero {
@@ -154,6 +194,10 @@
     height: 50vh;
     margin-top: 200px;
 
+    @media(max-width: 768px) and (orientation: portrait) {
+        max-width: 100%;
+    }
+
     .hero__title {
         font-size: 72px;
         letter-spacing: 5px;
@@ -162,8 +206,13 @@
             font-size: 60px;
         }
 
-        @media(max-width: 1200px) {
+        @media(max-width: 1024px) {
             font-size: 50px;
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            font-size: 40px;
+            padding-bottom: 70px;
         }
     }
 
@@ -181,7 +230,26 @@
             font-size: 17px;
             padding: 0 360px;
         }
+
+        @media(max-width: 900px) {
+            font-size: 17px;
+            padding: 0 290px;
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            padding: 0 190px;
+            font-size: 20px;
+            padding-bottom: 130px;
+            padding-top: 50px;
+
+        }
     }
 
+    .hero__button {
+        @media(max-width: 768px) and (orientation: portrait) {
+            margin-bottom: 100px;
+        }
 
+
+    }
 }

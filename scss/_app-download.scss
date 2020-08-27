@@ -17,6 +17,12 @@
 
     }
 
+    @media(max-width: 768px) and (orientation: portrait) {
+        max-width: 50%;
+        margin-right: 20px;
+        margin-left: 40px;
+    }
+
     .left-side__title {
         font-size: 36px;
 
@@ -32,7 +38,13 @@
 
         @media(max-width: 1200px) {
             font-size: 10px;
+            margin-bottom: 10px;
 
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            font-size: 14px;
+            padding-top: 10px;
         }
     }
 }
@@ -63,6 +75,14 @@
     justify-content: center;
     align-items: center;
 
+    @media(max-width: 768px) and (orientation: portrait) {
+        max-width: 30%;
+    }
+
+
+
+
+
 
 
 
@@ -76,6 +96,10 @@
             max-width: 100%;
 
         }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            max-width: 80%;
+        }
     }
 
     .right-side__under {
@@ -84,6 +108,10 @@
         @media(max-width: 1200px) {
             max-width: 120%;
 
+        }
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            max-width: 100%;
         }
     }
 }
