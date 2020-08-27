@@ -1,0 +1,48 @@
+.video-section {
+
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.video-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+
+
+    .video-left__title {
+        font-size: 36px;
+    }
+
+    .video-left__description {
+        font-size: 14px;
+        padding-right: 130px;
+        text-align: justify;
+        // margin-top: 30px;
+    }
+
+    .video-left__learnmore {
+        margin-bottom: 70px;
+        color: red;
+    }
+}
+
+.video-right {
+    width: 50%;
+    padding-left: 70px;
+    position: relative;
+
+    .video-right__video {
+        border-radius: 15px;
+    }
+
+    .viedo-right__playbutton {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 40px;
+        padding-top: 120px;
+    }
+}
