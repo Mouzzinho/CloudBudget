@@ -4,14 +4,17 @@
     color: white;
 }
 
-.app-mobile {
-    @media(max-width: 480px) and (orientation: portrait) {
-        display: flex;
+.app-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 768px) and (orientation: portrait) {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
 }
+
 
 .left-side {
     width: 50%;
@@ -27,9 +30,13 @@
     }
 
     @media(max-width: 768px) and (orientation: portrait) {
-        max-width: 50%;
+        width: 100%;
+        max-width: 100%;
         margin-right: 20px;
         margin-left: 40px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
     }
 
     .left-side__title {
@@ -56,12 +63,21 @@
         }
 
         @media(max-width: 768px) and (orientation: portrait) {
-            font-size: 14px;
-            padding-top: 10px;
+            font-size: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            max-width: 500px;
+            text-align: center;
         }
 
         @media(max-width: 480px) and (orientation: portrait) {
-            font-size: 10px;
+            font-size: 13px;
+            max-width: 400px;
+        }
+
+        @media(max-width: 320px) and (orientation: portrait) {
+            font-size: 12px;
+            max-width: 300px;
         }
     }
 }
@@ -73,6 +89,10 @@
         width: 45px;
 
     }
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        width: 60px;
+    }
 }
 
 .apps__apple {
@@ -81,6 +101,16 @@
     @media(max-width: 1200px) {
         width: 50px;
 
+    }
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        width: 60px;
+    }
+}
+
+.apps__windows {
+    @media(max-width: 768px) and (orientation: portrait) {
+        width: 35px;
     }
 }
 
@@ -93,7 +123,8 @@
     align-items: center;
 
     @media(max-width: 768px) and (orientation: portrait) {
-        max-width: 30%;
+        max-width: 100%;
+        width: 100%;
     }
 
     @media(max-width: 480px) and (orientation: portrait) {

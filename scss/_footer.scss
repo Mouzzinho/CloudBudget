@@ -5,6 +5,21 @@
 
 }
 
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+}
+
 .title--size {
     font-size: 18px;
     padding-bottom: 30px;
@@ -15,11 +30,15 @@
     }
 
     @media(max-width: 768px) and (orientation: portrait) {
-        font-size: 18px;
+        font-size: 30px;
     }
 
     @media(max-width: 480px) and (orientation: portrait) {
-        font-size: 16px;
+        font-size: 30px;
+    }
+
+    @media(max-width: 360px) and (orientation: portrait) {
+        font-size: 26px;
     }
 }
 
@@ -34,145 +53,150 @@
     }
 
     @media(max-width: 768px) and (orientation: portrait) {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     @media(max-width: 480px) and (orientation: portrait) {
-        font-size: 10px;
+        font-size: 18px;
     }
 
     @media(max-width: 360px) and (orientation: portrait) {
-        font-size: 8px;
+        font-size: 12px;
     }
 }
 
-.layout {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+.address {
+    width: 25%;
 
-    .address {
-        width: 25%;
-        padding-right: 120px;
-
-        @media(max-width: 1200px) {
-            padding-right: 35px;
-
-        }
-
-        @media(max-width: 768px) and (orientation: portrait) {
-            margin-left: 40px;
-        }
-
-        @media(max-width: 480px) and (orientation: portrait) {
-            padding-right: 0px;
-        }
-
-        .address--span {
-            display: block;
-        }
-    }
-
-    .services {
-        width: 25%;
-
-        @media(max-width: 1200px) {
-            margin-left: 10px;
-
-        }
-
-        @media(max-width: 768px) and (orientation: portrait) {
-            max-width: 25%;
-        }
-
-        .servies-list {
-            display: flex;
-            flex-direction: column;
-
-            .services-list__item {
-                line-height: 160%;
-            }
-
-        }
-
-    }
-
-    .get-in-touch {
-        width: 25%;
-
-        @media(max-width: 768px) and (orientation: portrait) {
-            max-width: 25%;
-        }
-
-        .get-in-touch__mail {
-            padding-bottom: 10px;
-        }
-
-        .socials {
-            padding-top: 20px;
-
-            .socials__facebook {
-                padding-right: 10px;
-            }
-
-            .socials__linked-in {
-                padding-right: 10px;
-            }
-        }
-    }
-
-    .secure {
-        width: 25%;
-
-        @media(max-width: 768px) and (orientation: portrait) {
-            margin-right: 30px;
-            max-width: 25%;
-
-
-
-        }
-
-        @media(max-width: 480px) and (orientation: portrait) {
-            margin-left: 20px;
-        }
-
-        @media(max-width: 360px) and (orientation: portrait) {
-            margin-left: 0;
-        }
-
-
-        .secure__image {
-            @media(max-width: 768px) and (orientation: portrait) {
-                width: 50%;
-
-            }
-
-            @media(max-width: 480px) and (orientation: portrait) {
-                width: 100%;
-            }
-
-
-
-        }
-    }
-}
-
-.copyright {
-    margin-left: 175px;
-    margin-top: 130px;
-
-    @media(max-width: 1024px) {
-        margin-left: 145px;
-    }
-
-    @media(max-width: 900px) {
-        margin-left: 80px;
-    }
 
     @media(max-width: 768px) and (orientation: portrait) {
-        margin-left: 40px;
-        margin-top: 80px;
-        padding-bottom: 20px;
+        width: 100%;
+        margin-top: 0px;
+        text-align: center;
     }
+
+    @media(max-width: 480px) and (orientation: portrait) {
+        padding-right: 0px;
+    }
+
+    .address__address {
+        @media(max-width: 768px) and (orientation: portrait) {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    .address--span {
+        display: block;
+    }
+}
+
+.services {
+    width: 25%;
+
+
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .servies-list {
+        display: flex;
+        flex-direction: column;
+
+        .services-list__item {
+            line-height: 160%;
+            text-align: center;
+
+        }
+
+    }
+
+}
+
+.get-in-touch {
+    width: 25%;
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .get-in-touch__mail {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .get-in-touch__phone {
+        @media(max-width: 768px) and (orientation: portrait) {
+            text-align: center;
+
+        }
+    }
+
+    .socials {
+        padding-top: 20px;
+
+        .socials__facebook {
+            padding-right: 10px;
+        }
+
+        .socials__linked-in {
+            padding-right: 10px;
+        }
+    }
+}
+
+.secure {
+    width: 25%;
+
+    @media(max-width: 1200px) {
+        text-align: center;
+
+    }
+
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        width: 100%;
+        margin-top: 50px;
+
+
+
+    }
+
+    @media(max-width: 480px) and (orientation: portrait) {
+        margin-left: 20px;
+    }
+
+    @media(max-width: 360px) and (orientation: portrait) {
+        margin-left: 0;
+    }
+
+
+    .secure__image {
+        @media(max-width: 768px) and (orientation: portrait) {
+            width: 50%;
+
+        }
+
+        @media(max-width: 480px) and (orientation: portrait) {
+            width: 50%;
+        }
+
+
+
+    }
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 100px;
+
+
+
 }

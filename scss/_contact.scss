@@ -2,6 +2,23 @@
     padding: 100px 0 120px 0;
 }
 
+.contact__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+
+    @media(max-width: 768px) and (orientation: portrait) {
+        flex-direction: column;
+    }
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .left-text {
     width: 50%;
 
@@ -13,13 +30,19 @@
         margin-left: 40px;
     }
 
-    @media(max-width: 360px) and (orientation: portrait) {
-        width: 180px;
-    }
+    // @media(max-width: 360px) and (orientation: portrait) {
+
+    // }
+
+
 
     .left-text__title {
         font-size: 36px;
         padding-bottom: 50px;
+
+        @media(max-width: 768px) {
+            text-align: center;
+        }
     }
 
     .left-text__description {
@@ -34,6 +57,15 @@
 
         @media(max-width: 768px) and (orientation: portrait) {
             font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        @media(max-width: 480px) and (orientation: portrait) {
+            max-width: 200px;
         }
 
     }
@@ -52,16 +84,23 @@
     }
 
     @media(max-width: 768px) and (orientation: portrait) {
-        max-width: 50%;
-        flex-direction: row;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+        margin: 0;
     }
+
+
 
     @media(max-width: 480px) and (orientation: portrait) {
         justify-content: center;
     }
 
     @media(max-width: 360px) and (orientation: portrait) {
-        margin-left: 0;
+        align-items: center;
 
     }
 
@@ -69,7 +108,7 @@
 
 
     .input--small {
-        width: 255px;
+        width: 240px;
         height: 60px;
         border-radius: 10px;
         justify-content: space-between;
@@ -83,7 +122,8 @@
         }
 
         @media(max-width: 768px) and (orientation: portrait) {
-            width: 130px;
+            width: 220px;
+            padding-left: 0;
         }
 
         @media(max-width: 480px) and (orientation: portrait) {
@@ -91,12 +131,16 @@
         }
 
         @media(max-width: 360px) and (orientation: portrait) {
-            width: 120px;
+            width: 220px;
         }
     }
 
     .inputs__first-name {
         margin-right: 30px;
+
+        @media(max-width: 768px) and (orientation: portrait) {
+            margin-right: 0;
+        }
 
         @media(max-width: 480px) and (orientation: portrait) {
             margin-right: 0;
@@ -107,7 +151,7 @@
 
 
     .input--big {
-        width: 540px;
+        width: 510px;
         height: 60px;
         border-radius: 10px;
         border: 1px solid grey;
@@ -121,16 +165,17 @@
 
         @media(max-width: 768px) and (orientation: portrait) {
             width: 220px;
+            padding-left: 0;
         }
 
         @media(max-width: 480px) and (orientation: portrait) {
-            width: 260px;
+            width: 220px;
         }
 
         @media(max-width: 360px) and (orientation: portrait) {
-            width: 120px;
+            width: 220px;
             padding-left: 0;
-            text-align: center;
+
         }
 
     }
@@ -141,6 +186,16 @@
 
     .inputs__submit {
         background-color: #ED4C5C;
+        width: 160px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        color: white;
+
+        @media(max-width: 1200px) {
+            width: 130px;
+            height: 40px;
+        }
 
     }
 }

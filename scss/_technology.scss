@@ -8,15 +8,21 @@
         text-align: center;
         padding: 10px 0 60px 0;
         font-size: 30px;
+
+        @media(max-width: 420px) and (orientation: portrait) {
+            padding-bottom: 60px;
+            padding-top: 0;
+        }
     }
 }
 
-.technology-mobile {
+.technology-wrapper {
+    display: flex;
+    justify-content: space-between;
+
     @media(max-width: 768px) and (orientation: portrait) {
-        display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100vw;
     }
 
 }
@@ -77,6 +83,10 @@
         @media(max-width: 768px) and (orientation: portrait) {
             font-size: 30px;
         }
+
+        @media(max-width: 420px) and (orientation: portrait) {
+            font-size: 25px;
+        }
     }
 
     .download__description {
@@ -95,6 +105,11 @@
 
         @media(max-width: 768px) and (orientation: portrait) {
             font-size: 20px;
+        }
+
+        @media(max-width: 420px) and (orientation: portrait) {
+            font-size: 16px;
+            max-width: 300px;
         }
     }
 }
