@@ -1764,7 +1764,7 @@ body {
 
 @media (max-width: 768px) and (orientation: portrait) {
   .title--size {
-    font-size: 30px;
+    font-size: 36px;
   }
 }
 
@@ -1794,7 +1794,7 @@ body {
 
 @media (max-width: 768px) and (orientation: portrait) {
   .text--size {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
@@ -1835,6 +1835,12 @@ body {
   }
 }
 
+@media (max-width: 768px) and (orientation: landscape) {
+  .address .address__address {
+    max-width: 110px;
+  }
+}
+
 .address .address--span {
   display: block;
 }
@@ -1866,6 +1872,30 @@ body {
   text-align: center;
 }
 
+@media (max-width: 1440px) and (orientation: landscape) {
+  .services .servies-list .services-list__item {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .services .servies-list .services-list__item {
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) and (orientation: portrait) {
+  .services .servies-list .services-list__item {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  .services .servies-list .services-list__item {
+    text-align: left;
+  }
+}
+
 .get-in-touch {
   width: 25%;
 }
@@ -1880,6 +1910,30 @@ body {
 .get-in-touch .get-in-touch__mail {
   padding-bottom: 10px;
   text-align: center;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .get-in-touch .get-in-touch__mail {
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) and (orientation: portrait) {
+  .get-in-touch .get-in-touch__mail {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  .get-in-touch .get-in-touch__mail {
+    text-align: left;
+  }
+}
+
+@media (max-width: 1440px) and (orientation: landscape) {
+  .get-in-touch .get-in-touch__mail {
+    text-align: left;
+  }
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -1926,6 +1980,12 @@ body {
 @media (max-width: 360px) and (orientation: portrait) {
   .secure {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .secure .secure__image {
+    width: 50%;
   }
 }
 
