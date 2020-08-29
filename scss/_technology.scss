@@ -9,7 +9,7 @@
         padding: 10px 0 60px 0;
         font-size: 30px;
 
-        @media(max-width: 420px) and (orientation: portrait) {
+        @media(max-width: 420px) {
             padding-bottom: 60px;
             padding-top: 0;
         }
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         flex-direction: column;
         justify-content: center;
     }
@@ -38,7 +38,7 @@
     align-items: center;
     align-content: center;
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         width: 100%;
     }
 
@@ -75,16 +75,17 @@
     .download__title {
         padding-top: 20px;
         font-size: 18px;
+        margin-bottom: 10px;
 
         @media(max-width: 1024px) {
             padding-top: 40px;
         }
 
-        @media(max-width: 768px) and (orientation: portrait) {
+        @media(max-width: 768px) {
             font-size: 30px;
         }
 
-        @media(max-width: 420px) and (orientation: portrait) {
+        @media(max-width: 420px) {
             font-size: 25px;
         }
     }
@@ -103,11 +104,11 @@
             padding: 10px 20px;
         }
 
-        @media(max-width: 768px) and (orientation: portrait) {
+        @media(max-width: 768px) {
             font-size: 20px;
         }
 
-        @media(max-width: 420px) and (orientation: portrait) {
+        @media(max-width: 420px) {
             font-size: 16px;
             max-width: 300px;
         }

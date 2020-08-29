@@ -13,7 +13,7 @@
 
 
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         justify-content: center;
         align-items: center;
 
@@ -31,15 +31,15 @@
 
     }
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         font-size: 36px;
     }
 
-    @media(max-width: 480px) and (orientation: portrait) {
+    @media(max-width: 480px) {
         font-size: 30px;
     }
 
-    @media(max-width: 360px) and (orientation: portrait) {
+    @media(max-width: 360px) {
         font-size: 26px;
     }
 }
@@ -54,15 +54,15 @@
 
     }
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         font-size: 22px;
     }
 
-    @media(max-width: 480px) and (orientation: portrait) {
+    @media(max-width: 480px) {
         font-size: 18px;
     }
 
-    @media(max-width: 360px) and (orientation: portrait) {
+    @media(max-width: 360px) {
         font-size: 12px;
     }
 }
@@ -71,25 +71,22 @@
     width: 25%;
 
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         width: 100%;
         margin-top: 0px;
         text-align: center;
     }
 
-    @media(max-width: 480px) and (orientation: portrait) {
+    @media(max-width: 480px) {
         padding-right: 0px;
     }
 
     .address__address {
-        @media(max-width: 768px) and (orientation: portrait) {
+        @media(max-width: 768px) {
             text-align: center;
             margin-bottom: 30px;
         }
 
-        @media(max-width: 768px) and (orientation: landscape) {
-            max-width: 110px;
-        }
     }
 
     .address--span {
@@ -102,7 +99,7 @@
 
 
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         width: 100%;
         text-align: center;
         margin-bottom: 30px;
@@ -114,23 +111,12 @@
 
         .services-list__item {
             line-height: 160%;
-            text-align: center;
 
-            @media(orientation:landscape) {
-                text-align: left;
-            }
-
-            @media(max-width: 768px) and (orientation: portrait) {
+            @media(max-width: 768px) {
                 text-align: center;
             }
 
-            @media(min-width: 800px) and (orientation: portrait) {
-                text-align: left;
-            }
 
-            @media(min-width: 1024px) and (orientation: portrait) {
-                text-align: left;
-            }
 
         }
 
@@ -141,7 +127,7 @@
 .get-in-touch {
     width: 25%;
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         width: 100%;
         text-align: center;
 
@@ -149,29 +135,18 @@
 
     .get-in-touch__mail {
         padding-bottom: 10px;
-        text-align: center;
 
 
 
-        @media(max-width: 768px) and (orientation: portrait) {
+        @media(max-width: 768px) {
             text-align: center;
         }
 
-        @media(min-width: 800px) and (orientation: portrait) {
-            text-align: left;
-        }
 
-        @media(min-width: 1024px) and (orientation: portrait) {
-            text-align: left;
-        }
-
-        @media(orientation:landscape) {
-            text-align: left;
-        }
     }
 
     .get-in-touch__phone {
-        @media(max-width: 768px) and (orientation: portrait) {
+        @media(max-width: 768px) {
             text-align: center;
 
         }
@@ -199,7 +174,7 @@
     }
 
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         width: 100%;
         margin-top: 50px;
 
@@ -207,26 +182,17 @@
 
     }
 
-    @media(max-width: 480px) and (orientation: portrait) {
+    @media(max-width: 480px) {
         margin-left: 20px;
     }
 
-    @media(max-width: 360px) and (orientation: portrait) {
+    @media(max-width: 360px) {
         margin-left: 0;
     }
 
 
     .secure__image {
-        @media(max-width: 1024px) and (orientation:landscape) {
-            width: 50%;
-        }
-
-        @media(max-width: 800px) and (orientation: portrait) {
-            width: 50%;
-
-        }
-
-        @media(max-width: 480px) and (orientation: portrait) {
+        @media(max-width: 1024px) {
             width: 50%;
         }
 

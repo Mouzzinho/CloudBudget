@@ -19,22 +19,18 @@ body {
     margin: 0 auto;
     max-width: 100%;
 
-    @media (orientation: landscape) and (max-width: 1200px) {
+    @media (max-width: 1200px) {
         width: 768px;
         padding: 0 15px;
 
     }
 
-    @media (orientation: landscape) and (max-width: 768px) {
+    @media (max-width: 768px) {
         width: 100%;
 
 
     }
 
-    @media(max-width: 1024px) and (orientation: portrait) {
-        width: 100%;
-        padding: 0 15px;
-    }
 }
 
 
@@ -48,21 +44,23 @@ body {
     color: white;
 
 
+    @media(max-width: 1024px) {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+
     @media(max-width: 768px) {
         width: 100%;
         max-width: 100%;
 
     }
 
-    @media(max-width: 768px) and (orientation: portrait) {
+    @media(max-width: 768px) {
         width: 100%;
         max-width: 100%;
     }
 
-    @media(max-width: 1024px) and (orientation: portrait) {
-        font-size: 12px;
-        padding-right: 10px;
-    }
+
 
 
 }
@@ -72,28 +70,37 @@ body {
     justify-content: space-between;
     align-items: center;
 
+    .mobile-menu {
+        display: none;
+
+
+    }
+
 
     @media(max-width: 1200px) {
         max-width: 768px;
+        margin: 0 auto;
     }
 
     @media(max-width: 768px) {
         width: 100%;
         max-width: 100%;
 
+        .main-menu {
+            display: none;
 
-    }
+        }
 
-    @media(max-width: 768px) and (orientation: portrait) {
-        width: 100%;
-    }
+        .mobile-menu {
+            display: block;
 
-    @media(max-width: 480px) and (orientation: portrait) {
-        max-width: 80%;
-    }
+            .mobile-menu__burger {
+                width: 25px;
 
-    @media(max-width: 1024px) and (orientation: portrait) {
-        margin: 0 auto;
+            }
+        }
+
+
     }
 
 
@@ -106,43 +113,6 @@ body {
             margin-right: 40px;
         }
 
-        @media(max-width: 1024px) and (orientation: portrait) {
-            padding-left: 0px;
-            margin-right: 10px;
-        }
-
-        @media(max-width: 768px) {
-            font-size: 10px;
-            margin-right: 20px;
-
-
-        }
-
-        @media(max-width: 570px) {
-            font-size: 8px;
-        }
-
-        @media(max-width: 480px) and (orientation: portrait) {
-            margin-right: 0px;
-            font-size: 6px;
-        }
-
-        @media(max-width: 480px) and (orientation: landscape) {
-            font-size: 7px;
-        }
-
-        @media(max-width: 420px) and (orientation: portrait) {
-            font-size: 6px;
-            margin-right: 0px;
-        }
-
-        @media(max-width: 360px) and (orientation: portrait) {
-            font-size: 6px;
-        }
-
-        @media(max-width: 320px) and (orientation: portrait) {
-            font-size: 5px;
-        }
 
 
 
@@ -150,19 +120,9 @@ body {
             padding-right: 5px;
 
             @media(max-width: 768px) {
-                width: 25px;
-
+                width: 30px;
 
             }
-
-            @media(max-width: 420px) and (orientation: portrait) {
-                width: 15px;
-            }
-
-            @media(max-width: 480px) and (orientation: landscape) {
-                width: 20px;
-            }
-
 
 
         }
@@ -177,22 +137,11 @@ body {
             margin-right: 30px;
         }
 
-        @media(max-width: 1024px) and (orientation: portrait) {
+        @media(max-width: 1024px) {
             padding-left: 0px;
             padding-right: 0px;
             margin-right: 30px;
         }
-
-        @media(max-width: 768px) {
-            margin-right: 0px;
-        }
-
-        @media(max-width: 360px) and (orientation: portrait) {
-            margin-left: 10px;
-            margin-right: 5px;
-        }
-
-
 
         .list__item {
             padding-right: 30px;
@@ -204,41 +153,9 @@ body {
 
             }
 
-            @media(max-width: 1024px) and (orientation: portrait) {
+            @media(max-width: 1024px) {
                 font-size: 11px;
                 padding-right: 5px;
-            }
-
-            @media(max-width: 768px) {
-                font-size: 9px;
-            }
-
-            @media(max-width: 570px) {
-                font-size: 8px;
-            }
-
-            @media(max-width: 480px) and (orientation: portrait) {
-                padding-right: 5px;
-                font-size: 6px;
-            }
-
-            @media(max-width: 480px) and (orientation: landscape) {
-                font-size: 7px;
-                padding-right: 5px;
-            }
-
-
-            @media(max-width: 420px) and (orientation: portrait) {
-                font-size: 6px;
-                padding-right: 4px;
-            }
-
-            @media(max-width: 360px) and (orientation: portrait) {
-                font-size: 6px;
-            }
-
-            @media(max-width: 320px) and (orientation: portrait) {
-                font-size: 5px;
             }
 
         }
@@ -250,14 +167,18 @@ body {
         justify-content: space-between;
         align-items: center;
 
+        @media(max-width: 768px) {
+            display: none;
+        }
+
 
 
         .language {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-right: 50px;
             align-content: center;
+            padding-right: 30px;
 
             @media(max-width: 1200px) {
                 font-size: 10px;
@@ -265,27 +186,10 @@ body {
 
             }
 
-            @media(max-width: 1024px) and (orientation: portrait) {
+            @media(max-width: 1024px) {
                 margin-left: 20px;
             }
 
-            @media(max-width: 768px) {
-                padding-right: 20px;
-            }
-
-
-            @media(max-width: 420px) and (orientation: portrait) {
-                padding-right: 0px;
-                margin-right: 0px;
-            }
-
-            @media(max-width: 360px) and (orientation: portrait) {
-                padding-left: 5px;
-            }
-
-            @media(max-width: 320px) and (orientation: portrait) {
-                padding-left: 0px;
-            }
 
 
             .language__text {
@@ -296,14 +200,6 @@ body {
                     padding: 0 0 0 6px;
                 }
 
-                @media(max-width: 480px) and (orientation: portrait) {
-                    font-size: 8px;
-                }
-
-                @media(max-width: 420px) and (orientation: portrait) {
-                    font-size: 6px;
-                    padding: 0 0 0 2px;
-                }
             }
 
             .language__img {
@@ -311,13 +207,6 @@ body {
                     width: 25px;
                 }
 
-                @media(max-width: 768px) {
-                    width: 20px;
-                }
-
-                @media(max-width: 420px) and (orientation: portrait) {
-                    width: 15px;
-                }
 
             }
 
@@ -326,92 +215,32 @@ body {
                     width: 25px;
                 }
 
-                @media(max-width: 768px) {
-                    width: 20px;
-                }
-
-                @media(max-width: 420px) and (orientation: portrait) {
-                    width: 15px;
-                }
 
             }
 
         }
 
-        .login {
-            margin-left: 100px;
+
+
+
+
+        .login__button {
+            width: 100px;
+            height: 46px;
+            border-radius: 6px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
 
             @media(max-width: 1200px) {
-                margin-left: 40px;
+                width: 80px;
+                height: 35px;
             }
 
-            @media(max-width: 1024px) and (orientation: portrait) {
-                padding-left: 60px;
-            }
-
-            @media(max-width: 768px) {
-                margin-left: 0px;
-            }
-
-            @media(max-width: 480px) and (orientation: portrait) {
-                padding-left: 0px;
-            }
-
-            @media(max-width: 420px) and (orientation: portrait) {
-                padding-right: 20px;
-            }
-
-            @media(max-width: 360px) and (orientation: portrait) {
-                padding-right: 0px;
-            }
-
-
-
-
-            .login__button {
-                width: 100px;
-                height: 46px;
-                border-radius: 6px;
-                border: 1px solid white;
-                background-color: transparent;
-                color: white;
-
-                @media(max-width: 1200px) {
-                    width: 80px;
-                    height: 35px;
-                }
-
-                @media(max-width: 768px) {
-                    width: 60px;
-                    height: 25px;
-                    font-size: 10px;
-                }
-
-                @media(max-width: 480px) and (orientation: portrait) {
-                    width: 50px;
-                    height: 20px;
-                }
-
-                @media(max-width: 420px) and (orientation: portrait) {
-                    width: 50px;
-                    height: 20px;
-                    font-size: 6px;
-                    margin-left: 25px;
-                }
-
-                @media(max-width: 360px) and (orientation: portrait) {
-                    margin-left: 10px;
-                    width: 45px;
-                    height: 20px;
-                }
-
-                @media(max-width: 320px) and (orientation: portrait) {
-                    margin-left: 0;
-                }
-            }
         }
     }
 }
+
 
 .hero-section {
     background: url(../images/Bg.jpg);
@@ -442,11 +271,11 @@ body {
             font-size: 50px;
         }
 
-        @media(max-width: 480px) and (orientation: portrait) {
+        @media(max-width: 480px) {
             font-size: 40px;
         }
 
-        @media(max-width: 420px) and (orientation: portrait) {
+        @media(max-width: 420px) {
             font-size: 30px;
         }
     }
@@ -464,17 +293,17 @@ body {
             max-width: 390px;
         }
 
-        @media(max-width: 480px) and (orientation: portrait) {
+        @media(max-width: 480px) {
             font-size: 18px;
             max-width: 350px;
         }
 
-        @media(max-width: 420px) and (orientation: portrait) {
+        @media(max-width: 420px) {
             font-size: 18px;
             max-width: 340px;
         }
 
-        @media(max-width: 320px) and (orientation: portrait) {
+        @media(max-width: 320px) {
             font-size: 15px;
             max-width: 280px;
         }
