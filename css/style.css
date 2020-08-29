@@ -156,7 +156,7 @@ body {
 
 @media (max-width: 1200px) {
   .header-wrapper .list .list__item {
-    font-size: 10px;
+    font-size: 12px;
     padding-right: 13px;
   }
 }
@@ -164,7 +164,7 @@ body {
 @media (max-width: 1024px) {
   .header-wrapper .list .list__item {
     font-size: 11px;
-    padding-right: 5px;
+    padding-right: 10px;
   }
 }
 
@@ -568,7 +568,7 @@ body {
 @media (max-width: 768px) {
   .video-right {
     padding-left: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -661,9 +661,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -685,12 +685,6 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .feature {
-    margin-bottom: 50px;
-  }
-}
-
 .feature__image {
   border-radius: 10px;
   position: absolute;
@@ -708,7 +702,7 @@ body {
   background-color: #fff;
   text-align: center;
   width: 280px;
-  margin: 150px 35px;
+  margin: 150px 35px 0;
   padding: 25px 25px;
   border-radius: 10px;
   z-index: 1;
@@ -737,20 +731,14 @@ body {
 
 @media (max-width: 1200px) {
   .dashboard .dashboard__title {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .dashboard .dashboard__title {
-    font-size: 14px;
-    padding-bottom: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .dashboard .dashboard__title {
     font-size: 20px;
+    padding-bottom: 10px;
   }
 }
 
@@ -761,19 +749,13 @@ body {
 
 @media (max-width: 1200px) {
   .dashboard .dashboard__description {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
   .dashboard .dashboard__description {
-    font-size: 11px;
     padding-bottom: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .dashboard .dashboard__description {
     font-size: 14px;
   }
 }
@@ -1006,12 +988,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .left-side {
-    margin: 50px 0 0 0;
   }
 }
 
@@ -1284,7 +1260,7 @@ body {
 @media (max-width: 1200px) {
   .left-text .left-text__description {
     padding-right: 0px;
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 

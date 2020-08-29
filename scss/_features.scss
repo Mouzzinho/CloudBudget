@@ -43,7 +43,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
 
 
@@ -57,9 +57,6 @@
         align-items: center;
     }
 
-    @media(max-width: 480px) {
-        margin-bottom: 50px;
-    }
 
 
 
@@ -88,7 +85,7 @@
     background-color: #fff;
     text-align: center;
     width: 280px;
-    margin: 150px 35px;
+    margin: 150px 35px 0;
     padding: 25px 25px;
 
 
@@ -115,18 +112,15 @@
         padding-bottom: 20px;
 
         @media(max-width: 1200px) {
-            font-size: 13px;
+            font-size: 14px;
 
         }
 
         @media(max-width: 768px) {
-            font-size: 14px;
+            font-size: 20px;
             padding-bottom: 10px;
         }
 
-        @media(max-width: 480px) {
-            font-size: 20px;
-        }
     }
 
     .dashboard__description {
@@ -134,17 +128,12 @@
         padding-bottom: 20px;
 
         @media(max-width: 1200px) {
-            font-size: 10px;
+            font-size: 12px;
 
         }
 
         @media(max-width: 768px) {
-            font-size: 11px;
             padding-bottom: 10px;
-        }
-
-
-        @media(max-width: 480px) {
             font-size: 14px;
         }
     }
